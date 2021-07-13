@@ -13,11 +13,17 @@ from leetcode_9 import find_anagrams
 
 
 @pytest.mark.parametrize("columntitle, result", [("A", 1), ('AB', 28),
-                         ('ZY', 701), ('FXSHRXW', 2147483647), ('C', 3)])
-@pytest.mark.xfail(reason="comment")
+                         ('ZY', 701), ('FXSHRXW', 2147483647),])
 def test_1(columntitle, result):
     '''1'''
     assert title_to_number(columntitle) == result
+
+
+@pytest.mark.parametrize("columntitle, result", [("ZY", 50), 
+                         ("C", 2), ('A', 5)])
+def test_1x(columntitle, result):
+    '''1-x'''
+    assert title_to_number(columntitle) != result
 
 
 @pytest.mark.parametrize("st_s, st_t, result", [('anagram', 'nagaram', True),
@@ -27,6 +33,13 @@ def test_2(st_s, st_t, result):
     assert is_anagram(st_s, st_t) == result
 
 
+@pytest.mark.parametrize('st_s, st_t, result', [('aasd', 'asd', True),
+                         ('bca', 'abc', False)])
+def test_2x(st_s, st_t, result):
+    '''2x'''
+    assert is_anagram(st_s, st_t) != result
+
+
 @pytest.mark.parametrize("nums, target, result", [("2 7 11 15", 9, [0, 1]),
                          ('3 2 4', 6, [1, 2]), ('3 3', 6, [0, 1])])
 def test_3(nums, target, result):
@@ -34,11 +47,25 @@ def test_3(nums, target, result):
     assert two_sum(nums.split(), target) == result
 
 
+@pytest.mark.parametrize("nums, target, result", [("8 5 9", 9, [0]),
+                         ('3 2 4', 15, [1, 2]), ('3 3', 6, [0, 0])])
+def test_3x(nums, target, result):
+    '''3x'''
+    assert two_sum(nums.split(), target) != result
+
+
 @pytest.mark.parametrize("num, result", [(3, "III"), (4, "IV"),
                          (9, "IX"), (58, "LVIII"), (1994, "MCMXCIV")])
 def test_4(num, result):
     '''4'''
     assert int_toroman(num) == result
+
+
+@pytest.mark.parametrize("num, result", [(3, "IIV"), (4, "IIII"),
+                         (9, "VIIII"), (58, "LIIX"), (1994, "MMXCIV")])
+def test_4x(num, result):
+    '''4x'''
+    assert int_toroman(num) != result
 
 
 @pytest.mark.parametrize("st_s, result", [("III", 3), ("IV", 4), ("IX", 9),
