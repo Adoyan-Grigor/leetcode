@@ -75,11 +75,25 @@ def test_5(st_s, result):
     assert roman_to_int(st_s) == result
 
 
+@pytest.mark.parametrize("st_s, result", [("III", 2), ("IV", 6), ("IX", 11),
+                         ("LVIII", 580), ("MCMXCIV", 100105015)])
+def test_5x(st_s, result):
+    '''5x'''
+    assert roman_to_int(st_s) != result
+
+
 @pytest.mark.parametrize("st_s, result", [("babad", 'bab'), ('cbbd', 'bb'),
                          ('a', 'a'), ('ac', 'a')])
 def test_6(st_s, result):
     '''6'''
     assert longest_palindrome(st_s) == result
+
+
+@pytest.mark.parametrize("st_s, result", [("babad", 'ba'), ('cbbd', 'b'),
+                         ('a', '|'), ('ac', 'ac')])
+def test_6x(st_s, result):
+    '''6x'''
+    assert longest_palindrome(st_s) != result
 
 
 @pytest.mark.parametrize('num1, num2, result', [('1 3', '2', 2), ('1 2', '3 3',
@@ -89,6 +103,13 @@ def test_7(num1, num2, result):
     assert find_median_sorted_arrays(num1.split(), num2.split()) == result
 
 
+@pytest.mark.parametrize('num1, num2, result', [('1 3', '2', 3), ('1 2', '3 3',
+                         2), ('', '1', ''), ('2', '', '')])
+def test_7x(num1, num2, result):
+    '''7x'''
+    assert find_median_sorted_arrays(num1.split(), num2.split()) != result
+
+
 @pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
                          [9, 7, 8]), ('eccbbbbdec', [10])])
 def test_8(st_s, result):
@@ -96,8 +117,22 @@ def test_8(st_s, result):
     assert partition_labels(st_s) == result
 
 
+@pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
+                         [0, 7, 8]), ('eccbbbbdec', [0])])
+def test_8x(st_s, result):
+    '''8x'''
+    assert partition_labels(st_s) != result
+
+
 @pytest.mark.parametrize("st_s, st_p, result", [('cbaebabacd', 'abc', [0, 6]),
                          ('abab', 'ab', [0, 1, 2])])
 def test_9(st_s, st_p, result):
     '''9'''
     assert find_anagrams(st_s, st_p) == result
+
+
+@pytest.mark.parametrize("st_s, st_p, result", [('cbaebabacd', 'abc', [0, 1]),
+                         ('abab', 'ab', [0, 2])])
+def test_9x(st_s, st_p, result):
+    '''9x'''
+    assert find_anagrams(st_s, st_p) != result
