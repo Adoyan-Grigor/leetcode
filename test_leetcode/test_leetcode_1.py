@@ -15,7 +15,7 @@ def test_1(columntitle, result):
 
 @pytest.mark.parametrize("columntitle, result", [("ZY", 50),
                          ("C", 2), ('A', 5)])
-def test_1x(columntitle, result):
+def test_1_negative(columntitle, result):
     '''https://leetcode.com/problems/excel-sheet-column-number/
        negative-test'''
     assert title_to_number(columntitle) != result

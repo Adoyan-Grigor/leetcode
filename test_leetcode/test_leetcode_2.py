@@ -15,6 +15,6 @@ def test_2(st_s, st_t, result):
 
 @pytest.mark.parametrize('st_s, st_t, result', [('aasd', 'asd', True),
                          ('bca', 'abc', False)])
-def test_2x(st_s, st_t, result):
+def test_2_negative(st_s, st_t, result):
     '''negative-test'''
     assert is_anagram(st_s, st_t) != result

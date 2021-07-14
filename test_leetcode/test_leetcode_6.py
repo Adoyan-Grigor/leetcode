@@ -14,6 +14,6 @@ def test_6(st_s, result):
 
 @pytest.mark.parametrize("st_s, result", [("babad", 'ba'), ('cbbd', 'b'),
                          ('a', '|'), ('ac', 'ac')])
-def test_6x(st_s, result):
+def test_6_negative(st_s, result):
     '''negative-test'''
     assert longest_palindrome(st_s) != result

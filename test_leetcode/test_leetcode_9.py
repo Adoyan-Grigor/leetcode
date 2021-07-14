@@ -16,6 +16,6 @@ def test_9(st_s, st_p, result):
 
 @pytest.mark.parametrize("st_s, st_p, result", [('cbaebabacd', 'abc', [0, 1]),
                          ('abab', 'ab', [0, 2])])
-def test_9x(st_s, st_p, result):
+def test_9_negative(st_s, st_p, result):
     '''negative-test'''
     assert find_anagrams(st_s, st_p) != result

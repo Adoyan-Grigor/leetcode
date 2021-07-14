@@ -19,6 +19,6 @@ def test_3(nums, target, result):
 
 @pytest.mark.parametrize("nums, target, result", [("8 5 9", 9, [0]),
                          ('3 2 4', 15, [1, 2]), ('3 3', 6, [0, 0])])
-def test_3x(nums, target, result):
+def test_3_negative(nums, target, result):
     '''negative-test'''
     assert two_sum(nums.split(), target) != result

@@ -15,6 +15,6 @@ def test_5(st_s, result):
 
 @pytest.mark.parametrize("st_s, result", [("III", 2), ("IV", 6), ("IX", 11),
                          ("LVIII", 580), ("MCMXCIV", 100105015)])
-def test_5x(st_s, result):
+def test_5_negative(st_s, result):
     '''neagtive-test'''
     assert roman_to_int(st_s) != result

@@ -16,6 +16,6 @@ def test_8(st_s, result):
 
 @pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
                          [0, 7, 8]), ('eccbbbbdec', [0])])
-def test_8x(st_s, result):
+def test_8_negative(st_s, result):
     '''negative-test'''
     assert partition_labels(st_s) != result

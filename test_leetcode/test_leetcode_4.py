@@ -15,6 +15,6 @@ def test_4(num, result):
 
 @pytest.mark.parametrize("num, result", [(3, "IIV"), (4, "IIII"),
                          (9, "VIIII"), (58, "LIIX"), (1994, "MMXCIV")])
-def test_4x(num, result):
+def test_4_negative(num, result):
     '''negative-test'''
     assert int_toroman(num) != result
