@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''7'''
+'''leetcode_7'''
 
 
 def find_median_sorted_arrays(num1, num2):

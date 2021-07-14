@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''9'''
+'''leetcode_9'''
 
 
 def find_anagrams(st_s, st_p):

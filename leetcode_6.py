@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''6'''
+'''leetcode_6'''
 
 
 def longest_palindrome(st_s):

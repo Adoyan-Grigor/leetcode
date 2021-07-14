@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''2'''
+'''leetcode_2'''
 
 
 def is_anagram(st_s, st_t):

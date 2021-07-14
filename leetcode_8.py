@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''8'''
+'''leetcode_8'''
 
 
 def partition_labels(st_s):

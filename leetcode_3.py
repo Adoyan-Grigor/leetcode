@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''3'''
+'''leetcode_3'''
 
 
 def two_sum(nums, target):
