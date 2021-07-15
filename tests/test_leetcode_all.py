@@ -15,7 +15,10 @@ from leetcode.leetcode_9 import find_anagrams
 @pytest.mark.parametrize("columntitle, result", [("A", 1), ('AB', 28),
                          ('ZY', 701), ('FXSHRXW', 2147483647)])
 def test_1(columntitle, result):
-    '''test_leetcode_1'''
+    '''test_leetcode_1
+       Given a string columnTitle that represents the column
+       title as appear in an Excel sheet,
+       return its corresponding column number.'''
     assert title_to_number(columntitle) == result
 
 
@@ -29,7 +32,9 @@ def test_1_negative(columntitle, result):
 @pytest.mark.parametrize("st_s, st_t, result", [('anagram', 'nagaram', True),
                          ('rat', 'car', False)])
 def test_2(st_s, st_t, result):
-    '''test_leetcode_2'''
+    '''test_leetcode_2
+       Given two strings s and t, return true if t is an
+       anagram of s, and false otherwise.'''
     assert is_anagram(st_s, st_t) == result
 
 
@@ -43,7 +48,13 @@ def test_2_negative(st_s, st_t, result):
 @pytest.mark.parametrize("nums, target, result", [("2 7 11 15", 9, [0, 1]),
                          ('3 2 4', 6, [1, 2]), ('3 3', 6, [0, 1])])
 def test_3(nums, target, result):
-    '''test_leetcode_3'''
+    '''test_leetcode_3
+       Given an array of integers nums and an integer target,
+       return indices of the two numbers
+       such that they add up to target. You may assume
+       that each input would have exactly
+       one solution, and you may not use the same element twice.
+       You can return the answer in any order.'''
     assert two_sum(nums.split(), target) == result
 
 
@@ -57,7 +68,9 @@ def test_3_negative(nums, target, result):
 @pytest.mark.parametrize("num, result", [(3, "III"), (4, "IV"),
                          (9, "IX"), (58, "LVIII"), (1994, "MCMXCIV")])
 def test_4(num, result):
-    '''test_leetcode_4'''
+    '''test_leetcode_4
+       Roman numerals are represented by seven different
+       symbols: I, V, X, L, C, D and M.'''
     assert int_toroman(num) == result
 
 
@@ -71,7 +84,9 @@ def test_4_negative(num, result):
 @pytest.mark.parametrize("st_s, result", [("III", 3), ("IV", 4), ("IX", 9),
                          ("LVIII", 58), ("MCMXCIV", 1994)])
 def test_5(st_s, result):
-    '''test_leetcode_5'''
+    '''test_leetcode_5
+       Roman numerals are represented by seven different
+       symbols: I, V, X, L, C, D and M.'''
     assert roman_to_int(st_s) == result
 
 
@@ -85,7 +100,9 @@ def test_5_negative(st_s, result):
 @pytest.mark.parametrize("st_s, result", [("babad", 'bab'), ('cbbd', 'bb'),
                          ('a', 'a'), ('ac', 'a')])
 def test_6(st_s, result):
-    '''test_leetcode_6'''
+    '''test_leetcode_6
+       https://leetcode.com/problems/longest-palindromic-substring/
+       Given a string s, return the longest palindromic substring in s.'''
     assert longest_palindrome(st_s) == result
 
 
@@ -99,7 +116,10 @@ def test_6_negative(st_s, result):
 @pytest.mark.parametrize('num1, num2, result', [('1 3', '2', 2), ('1 2', '3 3',
                          2.5), ('0 0', '0 0', 0), ('', '1', 1), ('2', '', 2)])
 def test_7(num1, num2, result):
-    '''test_leetcode_7'''
+    '''test_leetcode_7
+       Given two sorted arrays nums1 and nums2 of size m and n respectively,
+       return the median of the two sorted arrays.
+       The overall run time complexity should be O(log (m+n)).'''
     assert find_median_sorted_arrays(num1.split(), num2.split()) == result
 
 
@@ -113,7 +133,10 @@ def test_7_neagtive(num1, num2, result):
 @pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
                          [9, 7, 8]), ('eccbbbbdec', [10])])
 def test_8(st_s, result):
-    '''test_leetcode_8'''
+    '''test_leetcode_8
+       You are given a string s. We want to partition the string into as many
+       parts as possible so that each letter appears in at most one part.
+       Return a list of integers representing the size of these parts.'''
     assert partition_labels(st_s) == result
 
 
@@ -127,7 +150,10 @@ def test_8_negative(st_s, result):
 @pytest.mark.parametrize("st_s, st_p, result", [('cbaebabacd', 'abc', [0, 6]),
                          ('abab', 'ab', [0, 1, 2])])
 def test_9(st_s, st_p, result):
-    '''test_leetcode_9'''
+    '''test_leetcode_9
+       Given two strings s and p, return an array of all the start
+       indices of p's anagrams in s.
+       You may return the answer in any order.'''
     assert find_anagrams(st_s, st_p) == result
 
 
