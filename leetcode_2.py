@@ -2,7 +2,7 @@
 '''leetcode_2'''
 
 
-def is_anagram(st_s, st_t):
+def is_anagram(st_s: str, st_t: str) -> bool:
     '''https://leetcode.com/problems/valid-anagram/'''
     st_g = 0
     st_f = []

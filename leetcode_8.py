@@ -2,7 +2,7 @@
 '''leetcode_8'''
 
 
-def partition_labels(st_s):
+def partition_labels(st_s: str):
     '''https://leetcode.com/problems/partition-labels/'''
     res = []
     st_x = 0

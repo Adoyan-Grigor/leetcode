@@ -2,7 +2,7 @@
 '''leetcode_3'''
 
 
-def two_sum(nums, target):
+def two_sum(nums: list, target: int) -> list:
     '''https://leetcode.com/problems/two-sum/'''
     res = []
     llist = []

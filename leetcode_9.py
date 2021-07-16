@@ -2,7 +2,7 @@
 '''leetcode_9'''
 
 
-def find_anagrams(st_s, st_p):
+def find_anagrams(st_s: str, st_p: str):
     '''https://leetcode.com/problems/find-all-anagrams-in-a-string/'''
     res = []
     for st_i in range(len(st_s)):

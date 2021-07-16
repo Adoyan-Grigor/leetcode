@@ -2,7 +2,7 @@
 '''leetcode_5'''
 
 
-def roman_to_int(st_s):
+def roman_to_int(st_s: str) -> int:
     '''https://leetcode.com/problems/roman-to-integer/'''
     the_w = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     res = 0

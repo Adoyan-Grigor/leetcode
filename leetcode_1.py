@@ -2,7 +2,7 @@
 '''leetcode_1'''
 
 
-def title_to_number(columntitle):
+def title_to_number(columntitle: str) -> int:
     '''https://leetcode.com/problems/excel-sheet-column-number/'''
     res = 0
     my_case = {"A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6, "G": 7,

@@ -2,7 +2,7 @@
 '''leetcode_4'''
 
 
-def int_toroman(num):
+def int_toroman(num: int) -> str:
     '''https://leetcode.com/problems/integer-to-roman/'''
     res = ''
     mapping = {1000: 'M', 900: 'CM', 500: 'D', 400: 'CD', 100: 'C', 90: 'XC',

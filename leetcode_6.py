@@ -2,7 +2,7 @@
 '''leetcode_6'''
 
 
-def longest_palindrome(st_s):
+def longest_palindrome(st_s: str) -> str:
     '''https://leetcode.com/problems/longest-palindromic-substring/'''
     if not st_s or len(st_s) == 1:
         return st_s
