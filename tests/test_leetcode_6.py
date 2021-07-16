@@ -1,5 +1,6 @@
 '''https://leetcode.com/problems/longest-palindromic-substring/
 Given a string s, return the longest palindromic substring in s.'''
+
 import pytest
 
 from leetcode.leetcode_6 import longest_palindrome

@@ -1,7 +1,6 @@
 '''https://leetcode.com/problems/valid-anagram/
 Given two strings s and t, return true if t is an
 anagram of s, and false otherwise.'''
-
 import pytest
 
 from leetcode.leetcode_2 import is_anagram

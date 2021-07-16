@@ -2,6 +2,7 @@
 Given two sorted arrays nums1 and nums2 of size m and n respectively,
 return the median of the two sorted arrays.
 The overall run time complexity should be O(log (m+n)).'''
+
 import pytest
 
 from leetcode.leetcode_7 import find_median_sorted_arrays
