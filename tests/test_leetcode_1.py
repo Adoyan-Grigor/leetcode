@@ -2,6 +2,7 @@
 Given a string columnTitle that represents the column
 title as appear in an Excel sheet,
 return its corresponding column number.'''
+
 import pytest
 from leetcode.leetcode_1 import title_to_number
 
