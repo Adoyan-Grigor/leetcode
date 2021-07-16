@@ -2,7 +2,7 @@
 '''leetcode_7'''
 
 
-def find_median_sorted_arrays(num1, num2):
+def find_median_sorted_arrays(num1: str, num2: str):
     '''https://leetcode.com/problems/median-of-two-sorted-arrays/'''
     nums1 = []
     nums2 = []
