@@ -15,7 +15,7 @@ def test_7(num1: str, num2: str, result):
 
 
 @pytest.mark.parametrize('num1, num2, result', [('1 3', '2', 3), ('1 2', '3 3',
-                         2), ('', '1', ''), ('2', '', '')])
+                         2), ('', '1', "1"), ('2', '', '')])
 def test_7_negative(num1: str, num2: str, result):
     '''negative_test_leetcode_7'''
     assert find_median_sorted_arrays(num1.split(), num2.split()) != result
