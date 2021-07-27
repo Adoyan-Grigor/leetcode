@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-'''leetcode_9'''
+'''leetcode_9
+   performs the task by reference
+   https://leetcode.com/problems/find-all-anagrams-in-a-string/'''
 
 
 def find_anagrams(st_s: str, st_p: str):
-    '''https://leetcode.com/problems/find-all-anagrams-in-a-string/'''
+    '''returns an array of all the starting
+       indices of the anagrams st_p in st_s'''
     res = []
     for st_i in range(len(st_s)):
         st_y = 0
