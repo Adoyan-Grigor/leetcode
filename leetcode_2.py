@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-'''leetcode_2'''
+'''leetcode_2
+   performs the task by reference
+   (https://leetcode.com/problems/valid-anagram/)'''
 
 
 def is_anagram(st_s: str, st_t: str) -> bool:
-    '''https://leetcode.com/problems/valid-anagram/'''
+    '''Given two strings st_s and st_t, returns true if st_t is
+       an anagram of st_s, and false otherwise.'''
     st_g = 0
     st_f = []
     for st_k in st_t:
