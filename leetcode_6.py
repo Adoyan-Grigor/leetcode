@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-'''leetcode_6'''
+'''leetcode_6
+   performs the task by reference
+   https://leetcode.com/problems/longest-palindromic-substring/'''
 
 
 def longest_palindrome(st_s: str) -> str:
-    '''https://leetcode.com/problems/longest-palindromic-substring/'''
+    '''returns the longest palindromic substring in st_s'''
     if not st_s or len(st_s) == 1:
         return st_s
     min_start, max_len = 0, 1
