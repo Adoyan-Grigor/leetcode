@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-'''leetcode_5'''
+'''leetcode_5
+   performs the task by reference
+   https://leetcode.com/problems/roman-to-integer/'''
 
 
 def roman_to_int(st_s: str) -> int:
-    '''https://leetcode.com/problems/roman-to-integer/'''
+    '''converts roman numbers to integers'''
     the_w = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
     res = 0
     st_s += "|"
