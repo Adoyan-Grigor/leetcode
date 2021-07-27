@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-'''leetcode_8'''
+'''leetcode_8
+   performs the task by reference
+   https://leetcode.com/problems/partition-labels/'''
 
 
 def partition_labels(st_s: str):
-    '''https://leetcode.com/problems/partition-labels/'''
+    '''splits the string into as many parts as possible so
+       that each letter appears in at most one part.'''
     res = []
     st_x = 0
     st_y = 1
