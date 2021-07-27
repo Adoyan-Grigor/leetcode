@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-'''leetcode_7'''
+'''leetcode_7
+   performs the task by reference
+   https://leetcode.com/problems/median-of-two-sorted-arrays/'''
 
 
 def find_median_sorted_arrays(num1, num2):
-    '''https://leetcode.com/problems/median-of-two-sorted-arrays/'''
+    '''returns the median of two sorted arrays'''
     nums1 = []
     nums2 = []
     for i in num1:
