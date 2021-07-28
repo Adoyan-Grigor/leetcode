@@ -1,11 +1,6 @@
-'''https://leetcode.com/problems/two-sum/
-Given an array of integers nums and an integer target,
-return indices of the two numbers
-such that they add up to target. You may assume
-that each input would have exactly
-one solution, and you may not use the same element twice.
-You can return the answer in any order.'''
-
+'''tests the two_sum function in leetcode_3.py file
+   Given an array of integers nums and an integer target, returns the
+   indices of two numbers so that they add up to the target value.'''
 import pytest
 
 from leetcode.leetcode_3 import two_sum
