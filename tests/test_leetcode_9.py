@@ -1,7 +1,7 @@
-'''https://leetcode.com/problems/find-all-anagrams-in-a-string/
-Given two strings s and p, return an array of all the start
-indices of p's anagrams in s.
-You may return the answer in any order.'''
+'''tests the find_anagrams function in leetcode_9.py file
+   returns an array of all the starting
+   indices of the anagrams st_p in st_s'''
+
 import pytest
 
 from leetcode.leetcode_9 import find_anagrams
