@@ -1,6 +1,6 @@
-'''https://leetcode.com/problems/integer-to-roman/
-Roman numerals are represented by seven different
-symbols: I, V, X, L, C, D and M.'''
+'''tests the int_torman function in leetcode_4.py file
+   converts integer num to roman numbers'''
+
 import pytest
 
 from leetcode.leetcode_4 import int_toroman
