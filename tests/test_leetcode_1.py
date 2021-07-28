@@ -1,7 +1,6 @@
 '''tests the title_to_number function in leetcode_1.py file
    Given the string column_title representing the column title,
    returns the corresponding column number.'''
-
 import pytest
 from leetcode.leetcode_1 import title_to_number
 

@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 '''leetcode_1
    performs the task by reference
    (https://leetcode.com/problems/excel-sheet-column-number/)'''
