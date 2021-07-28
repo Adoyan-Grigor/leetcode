@@ -1,6 +1,6 @@
-'''https://leetcode.com/problems/roman-to-integer/
-Roman numerals are represented by seven different
-symbols: I, V, X, L, C, D and M.'''
+'''tests the roman_to_int function in leetcode_5.py file
+   converts roman numbers to integers'''
+
 import pytest
 
 from leetcode.leetcode_5 import roman_to_int
