@@ -6,7 +6,7 @@
 
 def partition_labels(st_s: str):
     '''splits the string into as many parts as possible so
-       that each letter appears in at most one part.'''
+       that each letter appears in at most one part'''
     res = []
     st_x = 0
     st_y = 1
