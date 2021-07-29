@@ -8,14 +8,13 @@ from leetcode.leetcode_8 import partition_labels
 
 
 @pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
-                         [9, 7, 8]), ('eccbbbbdec', [10])])
+                         [9, 7, 8]), ('eccbbbbdec', [10]), ('a', 1)])
 def test_8(st_s: str, result):
     '''test_leetcode_8'''
     assert partition_labels(st_s) == result
 
 
-@pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',
-                         [0, 7, 8]), ('eccbbbbdec', [0])])
+@pytest.mark.parametrize("st_s, result", [('ab', 2), ('aa', (1, 1))])
 def test_8_negative(st_s: str, result):
     '''negative_test_leetcode'''
     assert partition_labels(st_s) != result
