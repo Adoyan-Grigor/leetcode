@@ -1,6 +1,6 @@
 '''tests the partition_labels function in leetcode_8.py file
-   splits the string into as many parts as possible so that
-   each letter appears in at most one part.'''
+   splits the string into as many parts as possible so
+   that each letter appears in at most one part.'''
 
 import pytest
 
