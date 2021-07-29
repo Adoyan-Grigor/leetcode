@@ -14,6 +14,7 @@ def is_anagram(st_s: str, st_t: str) -> bool:
     for st_i in st_s:
         if st_i in st_f:
             st_g += 1
+            st_f.remove(st_i)
         else:
             res = False
             return res
