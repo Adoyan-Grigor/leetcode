@@ -10,16 +10,13 @@ def is_anagram(st_s: str, st_t: str) -> bool:
     if len(st_s) != len(st_t):
         res = False
         return res
+    list_t = []
+    for i in st_t:
+        list_t.append(i)
     for i in st_s:
-        s_num = 0
-        t_num = 0
-        for index_s in st_s:
-            if index_s == i:
-                s_num += 1
-        for index_t in st_t:
-            if index_t == i:
-                t_num += 1
-        if s_num != t_num:
+        if i in list_t:
+            list_t.remove(i)
+        else:
             res = False
             return res
     res = True
