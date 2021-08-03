@@ -18,7 +18,7 @@ def is_anagram(st_s: str, st_t: str) -> bool:
                 s_num += 1
         for index_t in st_t:
             if index_t == i:
-                t_num  += 1
+                t_num += 1
         if s_num != t_num:
             res = False
             return res
