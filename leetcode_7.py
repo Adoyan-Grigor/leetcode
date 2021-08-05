@@ -4,7 +4,7 @@
    https://leetcode.com/problems/median-of-two-sorted-arrays/'''
 
 
-def find_median_sorted_arrays(num1: list, num2: list):
+def find_median_sorted_arrays(num1, num2):
     '''returns the median of two sorted arrays'''
     nums1 = []
     nums2 = []
@@ -26,5 +26,5 @@ def find_median_sorted_arrays(num1: list, num2: list):
     if len(output_list) % 2 != 0:
         res = (output_list[mid])
         return res
-    res = float(output_list[mid] + output_list[mid-1])/2
+    res = float(output_list[mid] + output_list[mid - 1]) / 2
     return res
