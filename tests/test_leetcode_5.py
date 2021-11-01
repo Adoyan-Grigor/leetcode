@@ -3,7 +3,7 @@
 
 import pytest
 
-from leetcode.leetcode_5 import roman_to_int
+from ..leetcode_5 import roman_to_int
 
 
 @pytest.mark.parametrize("st_s, result", [("III", 3), ("IV", 4), ("IX", 9),

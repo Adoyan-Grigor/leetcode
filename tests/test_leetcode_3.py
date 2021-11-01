@@ -3,7 +3,7 @@
    indices of two numbers so that they add up to the target value.'''
 import pytest
 
-from leetcode.leetcode_3 import two_sum
+from ..leetcode_3 import two_sum
 
 
 @pytest.mark.parametrize("nums, target, result", [("2 7 11 15", 9, [0, 1]),

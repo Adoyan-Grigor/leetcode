@@ -4,7 +4,7 @@
 
 import pytest
 
-from leetcode.leetcode_8 import partition_labels
+from ..leetcode_8 import partition_labels
 
 
 @pytest.mark.parametrize("st_s, result", [('ababcbacadefegdehijhklij',

@@ -4,7 +4,7 @@
 
 import pytest
 
-from leetcode.leetcode_2 import is_anagram
+from ..leetcode_2 import is_anagram
 
 
 @pytest.mark.parametrize("st_s, st_t, result", [('anagram', 'nagaram', True),

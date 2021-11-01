@@ -2,7 +2,7 @@
    returns the median of two sorted arrays'''
 import pytest
 
-from leetcode.leetcode_7 import find_median_sorted_arrays
+from ..leetcode_7 import find_median_sorted_arrays
 
 
 @pytest.mark.parametrize('num1, num2, result', [('1 3', '2', 2), ('1 2', '3 3',

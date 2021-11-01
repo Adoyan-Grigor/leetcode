@@ -3,7 +3,7 @@
 
 import pytest
 
-from leetcode.leetcode_4 import int_toroman
+from ..leetcode_4 import int_toroman
 
 
 @pytest.mark.parametrize("num, result", [(3, "III"), (4, "IV"),

@@ -3,7 +3,7 @@
 
 import pytest
 
-from leetcode.leetcode_6 import longest_palindrome
+from ..leetcode_6 import longest_palindrome
 
 
 @pytest.mark.parametrize("st_s, result", [("babad", 'bab'), ('cbbd', 'bb'),

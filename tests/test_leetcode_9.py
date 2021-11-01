@@ -4,7 +4,7 @@
 
 import pytest
 
-from leetcode.leetcode_9 import find_anagrams
+from ..leetcode_9 import find_anagrams
 
 
 @pytest.mark.parametrize("st_s, st_p, result", [('cbaebabacd', 'abc', [0, 6]),
